@@ -2,7 +2,7 @@ let quotes = ["You miss 100% of the shots you don’t take.","The most difficult
 
 let author = ["-Wayne Gretsky","-Amelia Earhart","-Babe Ruth","-John Lennon","-Earl Nightingale" ];
 
-
+document.getElementById('bodyId').addEventListener('load', newQuote);
 
 function newQuote(){
     let numGen = Math.floor(Math.random() * (quotes.length));
