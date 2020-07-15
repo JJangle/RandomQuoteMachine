@@ -4,23 +4,28 @@
     <title>Random Quote Machine</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript" src="javascript.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
-<body class="bg-danger">
-<div class="container">
-<div class="card bg-primary mx-auto my-auto" id="quote-box">
+<body>
+<div class="container-fluid">
+<div class="row" id="rowBig">
+<div class="col-12 my-auto colBig">
+<div class="card" id="quote-box">
     <div class="card-header text-center">Random Quote Generator</div>
     <div class="row">
         <div class="col-12 text-center" id="text">TEXT HERE</div>
     </div>
     <div class="row">
-        <div class="col-12 text-center">AUTHOR</div>
+        <div class="col-12 text-center" id="author">AUTHOR</div>
     </div>
     <div class="card-body">CARD BODY</div>
-    <div class="card-footer"><button class="btn btn-default"><a href="twitter.com/intent/tweet" id="tweet-quote">TWEET</a></button><button class="btn btn-default"><a href="#" id="new-quote">NEW QUOTE</a></button></div>
+    <div class="card-footer"><button class="btn btn-default"><a href="twitter.com/intent/tweet" id="tweet-quote">TWEET</a></button><button onClick="newQuote()"class="btn btn-default"><a href="#" id="new-quote">NEW QUOTE</a></button></div>
+</div>
+</div>
 </div>
 </div>
 </body>

@@ -1,11 +1,32 @@
 .container-fluid {
-    display: flex;
-    margin: 0;
-    height: 100%;
-    width: 100%;
+    min-height: 100vh;
+    padding: 0;
 }
 
 .card{
     display: flex;
+}
+
+html{
+    min-height: 100%;
+    min-width: 100%;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    background-color: rgb(68, 68, 68);
+}
+
+#rowBig {
+    min-height: 100vh;
+    margin: 0;
+}
+
+#quote-box {
+    margin: 10%;
+    background-color: darkgrey;
+    border: green solid 3px;
+    color: green;
 }
 
